@@ -16,10 +16,25 @@ namespace XamarinSolutionInCSharp
         {
             var outerStackLayout = new StackLayout()
             {
-                Padding=30,
+                Padding = 30,
                 Children = {
-                    new Label(){}
+                    new Label(){
+                        FontSize=20,
+                        HorizontalOptions = LayoutOptions.Center
+                    },
+                    new StackLayout(){
+                        Orientation = StackOrientation.Horizontal,
+                        Children = {
+                            new Label(){ Text="Customer"},
+                            new Entry(){ Placeholder = "Full Name"}
+                        }
+                    },
+                    new Button(){
+                        Text = "Click me"
+                    }
+                }
             };
+            return outerStackLayout;
         }
     }
 }

@@ -8,7 +8,7 @@ namespace XamarinSolutionInCSharp
         {
             InitializeComponent();
 
-            MainPage = new XamarinSolutionInCSharpPage();
+            MainPage = new MainPage();
         }
 
         protected override void OnStart()
